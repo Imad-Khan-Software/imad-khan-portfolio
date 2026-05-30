@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Imad Khan - Software Engineering Student Portfolio"
+    />
+
+    <title>Imad Khan | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="light">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="brand">
+        <img src="my_pic.jpg" alt="Imad Khan profile photo" />
+        <span>Imad Khan</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#academic">Academic</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile" class="profile">
+      <div class="animated-wrap">
+        <div class="animated-text">Frontend Developer in Progress 🚀</div>
+      </div>
+
+      <img src="my_pic.jpg" alt="Portrait of Imad Khan" />
+
+      <h1>Imad Khan</h1>
+      <p class="role muted">
+        Software Engineering Student — UET Peshawar (Abbottabad Campus)
+      </p>
+
+      <p class="muted">
+        Passionate frontend-focused learner skilled in HTML, CSS, JavaScript,
+        and modern UI development. Always eager to learn and build real-world
+        applications.
+      </p>
+
+      <a href="cv.pdf" class="cv-btn" download> Download CV </a>
+    </section>
+
+    <!-- ACADEMIC SECTION -->
+    <section id="academic">
+      <h2>Academic Background</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Institute</th>
+            <th>Year</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Matric</td>
+            <td>NBHPH School, Kalyas</td>
+            <td>2022</td>
+            <td>85%</td>
+          </tr>
+          <tr>
+            <td>Intermediate</td>
+            <td>GHSS Shaheed Shahood Alam</td>
+            <td>2024</td>
+            <td>82%</td>
+          </tr>
+          <tr>
+            <td>BS Physics</td>
+            <td>GPGC Charsadda</td>
+            <td>2025</td>
+            <td>3.2 GPA</td>
+          </tr>
+          <tr>
+            <td>BS Software Engineering</td>
+            <td>UET Peshawar (Abbottabad)</td>
+            <td>2025 – 2029</td>
+            <td>In Progress</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="bar">
+            <div class="fill" data-pct="90"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>CSS</span>
+          <div class="bar">
+            <div class="fill" data-pct="85"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="bar">
+            <div class="fill" data-pct="75"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>MS Excel</span>
+          <div class="bar">
+            <div class="fill" data-pct="80"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <h2>Experience & Projects</h2>
+
+      <div class="exp-item">
+        <h3>Frontend Intern — Code Alpha</h3>
+        <p class="muted">
+          Worked on responsive layouts, modern UI components, and
+          JavaScript-based interactivity.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h3>Academic Projects</h3>
+        <p class="muted">
+          Developed management systems and programming-based projects using CRUD
+          logic and clean code practices.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>© 2025 Imad Khan · Built with HTML, CSS & JavaScript</footer>
+
+    <!-- THEME TOGGLE -->
+    <button id="themeToggle" aria-label="Toggle Theme"></button>
+    <script src="script.js"></script>
+  </body>
+</html>

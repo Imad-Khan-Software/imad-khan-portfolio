@@ -1,0 +1,238 @@
+/* =====================
+   VARIABLES
+===================== */
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --radius: 14px;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================
+   GLOBAL
+===================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 8%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.brand img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* =====================
+   SECTIONS
+===================== */
+section {
+  width: 80%;
+  max-width: 1100px;
+  margin: 50px auto;
+  background: var(--card);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: var(--accent);
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* =====================
+   PROFILE
+===================== */
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 140px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+.role {
+  font-weight: 500;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.cv-btn,
+button {
+  padding: 12px 22px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cv-btn:hover,
+button:hover {
+  opacity: 0.9;
+}
+
+/* =====================
+   SKILLS
+===================== */
+.skill {
+  margin-bottom: 18px;
+}
+
+.bar {
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.fill {
+  height: 10px;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), #22d3ee);
+  transition: width 1s ease;
+}
+
+/* =====================
+   EXPERIENCE
+===================== */
+.exp-item {
+  margin-bottom: 20px;
+}
+
+.exp-item h3 {
+  color: var(--accent);
+}
+
+/* =====================
+   TABLE
+===================== */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* =====================
+   FORM
+===================== */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+}
+
+/* =====================
+   THEME TOGGLE
+===================== */
+#themeToggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 18px;
+  border-radius: 50px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

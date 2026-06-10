@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This project is a responsive, front-end web application designed to showcase my academic background, technical skill set, and hands-on coding experience in a clean, professional layout. 
 
-LIVE DEMO: https://imad-khan-software.github.io/imad-khan-portflolio/
+LIVE DEMO: https://imad-khan-software.github.io/imad-khan-portfolio/
 
 ## ✨ Features
 * **Dynamic Theme Toggle:** Smoothly switch between **☀️ Light Mode** and **🌙 Dark Mode** with user preferences saved instantly via `localStorage`.
